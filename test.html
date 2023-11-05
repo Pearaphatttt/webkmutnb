@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="image/LOGOFONT.png" alt="LOGO"></a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">เกี่ยวกลับ <b>▼</b></a>
+                    <ul>
+                        <li><a href="#">Product 01</a></li>
+                        <li><a href="#">Product 02</a></li>
+                        <li><a href="#">Product 03</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ข่าวกิจกรรม</a></li>
+                <li><a href="#">หลักสูตร <b>▼</b></a>
+                    <ul>
+                        <li><a href="#">หลักสูตรINE</a></li>
+                        <li><a href="#">หลักสูตรINET</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ติดต่อ</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function() {
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
